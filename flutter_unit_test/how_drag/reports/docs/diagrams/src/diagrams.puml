@@ -1,0 +1,18 @@
+@startuml
+set namespaceSeparator ::
+
+class "how_drag::main.dart::MyApp" {
+  +Widget build()
+}
+
+class "how_drag::main.dart::Body" {
+  +_BodyState createState()
+}
+
+class "how_drag::main.dart::_BodyState" {
+  +bool isDragAccepted
+  +Widget build()
+}
+
+
+@enduml

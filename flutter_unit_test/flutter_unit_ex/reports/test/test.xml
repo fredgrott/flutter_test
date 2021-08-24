@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite errors="0" failures="0" tests="3" skipped="0" name="D:.fredgrttsstuff.GithubProjects.flutter_test.flutter_unit_test.flutter_unit_ex.test.widget" timestamp="2021-08-24T10:56:25">
+    <properties>
+      <property name="platform" value="vm"/>
+    </properties>
+    <testcase classname="D:.fredgrttsstuff.GithubProjects.flutter_test.flutter_unit_test.flutter_unit_ex.test.widget" name="Home Page tests app has title in appbar" time="1.082"/>
+    <testcase classname="D:.fredgrttsstuff.GithubProjects.flutter_test.flutter_unit_test.flutter_unit_ex.test.widget" name="Home Page tests counter increments smoke test" time="0.218"/>
+    <testcase classname="D:.fredgrttsstuff.GithubProjects.flutter_test.flutter_unit_test.flutter_unit_ex.test.widget" name="Home Page tests counter starts at zero" time="0.063"/>
+  </testsuite>
+</testsuites>
