@@ -1,0 +1,54 @@
+@startuml
+set namespaceSeparator ::
+
+class "expert_test_setup::app_vars.dart::Environment" {
+  +int index
+  {static} +List<Environment> values
+  {static} +Environment dev
+  {static} +Environment staging
+  {static} +Environment prod
+  {static} +Environment vizstory
+}
+
+"expert_test_setup::app_vars.dart::Environment" o-- "expert_test_setup::app_vars.dart::Environment"
+
+class "expert_test_setup::app_vars.dart::Constants" {
+  -Map<String, dynamic> _config
+  +dynamic whereAmI
+  +void setEnvironment()
+  +bool isDev()
+}
+
+class "expert_test_setup::app_vars.dart::_Config" {
+  {static} +Map<String, dynamic> debugConstants
+  {static} +Map<String, dynamic> prodConstants
+  {static} +Map<String, dynamic> qaConstants
+  {static} +Map<String, dynamic> visstoryConstants
+  {static} +String whereAmI
+}
+
+class "expert_test_setup::main.dart::MyApp" {
+  +MyHomePage? home
+  +Widget build()
+}
+
+"expert_test_setup::main.dart::MyApp" o-- "expert_test_setup::main.dart::MyHomePage"
+
+class "expert_test_setup::main.dart::MyHomePage" {
+  +String title
+  +String message
+  {static} +Key titleKey
+  {static} +Key messageKey
+  +State<MyHomePage> createState()
+}
+
+"expert_test_setup::main.dart::MyHomePage" o-- "flutter::src::foundation::key.dart::Key"
+
+class "expert_test_setup::main.dart::_MyHomePageState" {
+  -int _counter
+  -void _incrementCounter()
+  +Widget build()
+}
+
+
+@enduml
